@@ -69,10 +69,18 @@ nav a {
     fill: #fff;
 }
 
-@media screen  and (max-width: 800px) {
+@media  (max-width: 800px) {
+    
     .hideMobile {
         display: none;
     }
+
+    img.ikamba {
+        width: 100px;
+        height: 100px;
+    }
+
+
 }
 
 @media screen and (min-width: 800px) {
