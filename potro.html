@@ -10,30 +10,30 @@
 <body>
     <header>
         <div class="logo">
-            <img src="assets/IKAMBA Logo - Original - 5000x5000 (1).png" alt="">
+            <img class="ikamba" src="assets/IKAMBA Logo - Original - 5000x5000 (1).png" alt="logo da ikamba">
         </div>
         <nav>
             <ul>
+                <li class="hideMobile"><a href="#">Home</a></li>
+                <li class="hideMobile"></li><a href="#">Services</a></li>
+                <li class="hideMobile"></li><a href="#">Clients</a></li>
+                <li class="hideMobile"></li><a href="#">contacts</a></li>
+                <li class="hideMobile"></li><a href="#">Blog</a></li>
+                <li class="hideMobile"></li><a href="#">About</a></li>
+                <li class="hideDesktop" onclick="showSidebar()"><a href="#"><img class="icon" src="assets/menu.svg.svg" alt="menu"></a></li>
+            </ul>
+            
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><img class="icon" src="assets/close.svg.svg" alt="menu"></a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Clients</a></li>
                 <li><a href="#">contacts</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Home</a></li>
             </ul>
         </nav>
     </header>
-    <section class="central">
-        
-        <div class="cta">
-
-        </div>
-    </section>
-    <footer>
-        <h3>Ikamba</h3>
-        <hr>
-
-    </footer>
+    <script src="potro.js"></script>
 </body>
 </html>

@@ -7,33 +7,83 @@
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-header {
-    display: flex;
-    height: 10vh;
-}
-
-
-
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-section.central {
+body {
+    width: 100vw;
+    height: 100vh;
     background-image: url("./assets/62578.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    width: 100vw;
-    height: 100vh;
-
 }
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+div.logo {
+    width: 250px;
+    height: 100px;
+}
+
+img.ikamba {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    z-index: 999;
+}
+
+.icon {
+    fill: #fff;
+}
+
+@media screen  and (max-width: 800px) {
+    .hideMobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .hideDesktop {
+        display: none;
+    }
+}
+
+
+
+/*
 
 footer {
     background-color: darkgray;
@@ -51,4 +101,4 @@ footer hr {
     width: 80%;
     margin: auto;
   
-}
+}  */
